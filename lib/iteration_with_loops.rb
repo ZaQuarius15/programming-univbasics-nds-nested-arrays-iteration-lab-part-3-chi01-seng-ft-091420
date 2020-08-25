@@ -1,17 +1,16 @@
 def join_nested_strings(src)
-  new_string = ' '
+  new_string = []
   row_index = 0
   while row_index < src.count do
     element_index = 0 
     while element_index < src[row_index].count do
       if src[row_index][element_index].class == String
         word = src[row_index][element_index]
-        new_string + ' ' + '#{word}'
+        new_string << word
       end
       element_index += 1
     end
     row_index += 1
   end
-  sentence = new_string.to_s 
-  sentence.strip
+  new_string.join
 end

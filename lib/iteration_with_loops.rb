@@ -6,7 +6,7 @@ def join_nested_strings(src)
     while element_index < src[row_index].count do
       if src[row_index][element_index].class == String
         word = src[row_index][element_index]
-        new_string = new_string + word
+        new_string = new_string + ' ' + word
       end
       element_index += 1
     end

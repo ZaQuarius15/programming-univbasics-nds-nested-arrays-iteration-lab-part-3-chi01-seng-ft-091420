@@ -12,5 +12,6 @@ def join_nested_strings(src)
     end
     row_index += 1
   end
-  '#{new_string}'
+  sentence = new_string.to_s 
+  sentence.strip
 end

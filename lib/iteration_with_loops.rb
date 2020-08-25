@@ -1,5 +1,5 @@
 def join_nested_strings(src)
-  new_string = ''
+  new_string = ' '
   row_index = 0
   while src[row_index] < src.count do
     element_index = 0 
@@ -11,4 +11,5 @@ def join_nested_strings(src)
     end
     row_index += 1
   end
+  new_string.strip
 end
